@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap');
 /*==font-family: 'Switzer', sans-serif;==*/
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Jost", sans-serif;
-    font-weight: 400;
-}
 
 a{
     text-decoration: none;
@@ -20,71 +19,82 @@ li{
     list-style: none;
 }
 
-.header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(./img/dddddd.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .8;
-    display: flex;
-    position: relative;
-}
-
-header .content-info{
-    display: flex;
-    ;
-}
-
 .navbar{
-    position: absolute;
     display: flex;
-    justify-content: end;
-    align-items: center;
-    background-color: rgb(65, 93, 65);
     width: 100%;
-    height: 80px;
+    height: 70px;
+    padding: 10px 30px;
+    background-color: #58614c ;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Jost", sans-serif;
 }
 
 .nav-links{
     display: flex;
-    margin: 20px;
-    gap: 20px;
 }
 
+.nav-links li{
+    margin: 5px 10px;
+}
 
-.nav-links a{
-    padding: 5px 12px;
+.nav-links a{ 
     font-size: 20px;
-    transition: .4s ease-in;
+    font-weight: 400;
+    color: white;
+    transition: .3s ease-in-out;
 }
 
 .nav-links a:hover{
-    border-radius: 15px;
-    background-color: rgb(151, 105, 112);
-    color: whitesmoke;
+    color: rgb(237, 107, 8);
 }
 
-.content-info{
-    margin-top: 80px;
+.logo{
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(237, 107, 8);
+    opacity: .7;
+}
+
+.header {
+    display: grid;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
-.content-info h1{
-    font-family: 'Switzer', sans-serif;
-    font-size: 80px;
-    font-weight: 200;
-    color: rgb(47, 72, 47);
+.header-item  {
+    width: 100%;
+    position: relative;
 }
 
-.content-info p{
-    font-size: 19px;
-    color: rgb(14, 19, 14);
+.header-item img{
+    width: 100%;
+
+}
+
+.btnA{
+    width: 100px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(237, 107, 8);
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
+    right: 20px;
+    transition: .3s ease-in-out;
+}
+
+.btnA a{
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: "Jost", sans-serif;
+}
+
+.btnA:hover{
+    background-color: #58614c;
 }
 
 /*===section info===*/
@@ -93,6 +103,190 @@ section{
     width: 100%;
     padding: 50px 30px;
 }
+
+.info1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion{
+    width: 600px;
+    padding: 10px;
+}
+
+.descripcion h1{
+    font-family: "Jost", sans-serif;
+    margin-bottom: 20px;
+}
+
+.descripcion p{
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+}
+
+.info1 img{
+    margin-left: 30px;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.info1 img:hover{
+    padding: 7px;
+}
+
+/*===section proInfo===*/
+
+.info-productos{
+    background-color: #58614c;
+}
+
+.info-pro{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.card-links img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.card-links h3 {
+    font-family: "Jost", sans-serif ;
+    margin: 10px 0 0 10px;
+    color: whitesmoke;
+}
+
+.card-links p{
+    font-family: "Jost", sans-serif ;
+    margin: 10px 0 0 10px;
+    color: whitesmoke;
+}
+
+.card-links h1{
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Jost", sans-serif ;
+}
+
+.btnB{
+    width: 150px;
+    margin: 15px 0 0 25px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(237, 107, 8);
+    transition: .4s ease-in-out;
+}
+
+.btnB a{
+    font-family: "Jost", sans-serif ;
+    color: whitesmoke;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+
+.btnB:hover{
+    background-color: whitesmoke;
+}
+
+.btnB a:hover{
+    color: rgb(237, 107, 8);
+}
+
+.foopage{
+    background-image: url(./img/portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.info-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 30px;
+}
+
+.title-footer h1{
+    font-family: "Jost", sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.container-footer{
+    padding: 0 30px;
+    width: 100%;
+    height: 410px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.card-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.card-footer h1{
+    font-size: 35px;
+}
+
+.card-footer p{
+    font-size: 23px;
+}
+
+.card-footer a{
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+.foobottom{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    opacity: .6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foobottom p{
+    color: whitesmoke;
+    font-family: "Jost", sans-serif;
+}
+
+
+
+
+
 
 
 
